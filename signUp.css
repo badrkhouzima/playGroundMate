@@ -1,0 +1,26 @@
+.Sign__up {
+  display: none; /* Hide the modal by default */
+  position: fixed; /* Keep the modal centered on the page */
+  z-index: 1; /* Make sure the modal is displayed on top of other content */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.form__container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 8px 20px;
+  background-color: rgb(0, 255, 251);
+  transform: translate(-50%, -50%);
+  text-align: left;
+  position: absolute;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.sign__up-open{
+    display: block;
+}
