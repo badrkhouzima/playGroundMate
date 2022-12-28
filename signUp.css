@@ -1,16 +1,53 @@
-.Sign__up {
-  display: none; /* Hide the modal by default */
-  position: fixed; /* Keep the modal centered on the page */
-  z-index: 1; /* Make sure the modal is displayed on top of other content */
+/* .Sign__up {
+  display: none; 
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.4); 
+} */
+.sign__up-page{
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+  /* justify-items: flex-start; */
 }
 .form__container {
-  position: absolute;
+ border: 1px solid black;
+ padding: 20px 30px;
+}
+.form__container > input{
+  
+}
+.input__field{
+  display: flex;
+  justify-content: space-between;
+  margin: 18px;
+}
+.input__field > label {
+  flex: 1;
+}
+.spanishidnumber {
+
+  flex: 0.7;
+}
+.input__field> input{
+   height: 25px;
+   
+}
+.input__field> input:focus{
+   border: 1px solid blue;
+  
+}
+.sign__up-open{
+    /* display: block; */
+}
+
+
+ /* position: absolute;
   left: 50%;
   top: 50%;
   padding: 8px 20px;
@@ -19,8 +56,4 @@
   text-align: left;
   position: absolute;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-}
-.sign__up-open{
-    display: block;
-}
+  z-index: 1000; */

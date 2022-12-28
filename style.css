@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .Sign__in-up{
-  margin: 10px;
+  /* margin: 10px; */
 }
 .Sign__in-up > input{
   padding: 5px 10px;
@@ -18,14 +18,14 @@
   text-align: center;
   padding: 30px 20%;
 }
-.container select {
+.container >select {
   width: 200px;
   height: 40px;
   border: none;
   border-radius: 20px;
   text-align: center;
 }
-.container select:hover {
+.container >select:hover {
   background-color: #cbe7e3;
 }
 .parks__adresses li {

@@ -56,4 +56,5 @@ function districtSelected() {
     )
     .join("");
   //return openSchedule;
+ 
 }
