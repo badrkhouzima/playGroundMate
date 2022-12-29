@@ -9,6 +9,15 @@
   overflow: auto; 
   background-color: rgba(0, 0, 0, 0.4); 
 } */
+hr{
+  margin-bottom: 20px;
+  border: 0.2px solid rgb(2, 2, 2);
+  /* height: 2px; */
+}
+.sign__up-page > nav> h3{
+  padding: 20px 6px;
+text-align: left;
+}
 .sign__up-page{
   /* display: flex;
   flex-direction: column; */
@@ -31,8 +40,15 @@
   flex: 1;
 }
 .spanishidnumber {
-
-  flex: 0.7;
+  /* flex: 0.2; */
+  margin: auto;
+}
+.sex__label{
+  flex: 0.3;
+  margin: 0 auto;
+}
+.radio__male-female{
+  flex: 0.56;
 }
 .input__field> input{
    height: 25px;

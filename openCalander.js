@@ -1,10 +1,11 @@
 // Create the modal element
 import fatherSetTiming from "./openTime.js";
+
 export default function openModal() {
   const today = new Date();
   const currentMonth = today.getMonth();
   const currentYear = today.getFullYear();
-
+console.log("entered in cala")
   // Get the number of days in the current month
   const numDays = new Date(currentYear, currentMonth + 1, 0).getDate();
   console.log("daynums", numDays);
@@ -36,7 +37,7 @@ export default function openModal() {
   let cellCounter = 0;
   for (const day of calendarCells) {
     const td = document.createElement("td");
-    td.setAttribute("onclick", "fatherSetTiming()");
+    td.setAttribute("onclick", ()=>fatherSetTiming);
     td.textContent = day;
     tr.appendChild(td);
 
@@ -49,36 +50,17 @@ export default function openModal() {
     }
     //tbody.appendChild(tr);
   }
-  window.fatherSetTiming = fatherSetTiming;
+
   if (cellCounter > 0) {
     tbody.appendChild(tr);
   }
-  window.addEventListener("click", function (event) {
+  // it used to be window.addebventlsiten the code below
+  addEventListener("click", function (event) {
     if (event.target === calander) {
       calander.classList.remove("is-open");
       // () => modal.classList.remove('is-open')
     }
   });
-
-  // const element = document.querySelector("tbody");
-  // element.innerHTML= txt
-  // element.innerHTML = calendarCells.join("");
-
-  // Add the modal to the DOM
-
-  // window.document.body.appendChild(modal);
-
-  // Add event listeners to open and close the modal
-  // const openButton = document.querySelector('.open-button');
-  // openButton.addEventListener('click', () => modal.classList.add('is-open'));
-
-  // const closeButton = modal.querySelector('.close-button');
-  // closeButton.addEventListener('click', () => modal.classList.remove('is-open'));
   return calander;
 }
 
-{
-  /* <p>This is the modal content.</p>
-<button class="close-button">Close</button> */
-  
-}
